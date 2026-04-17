@@ -1,0 +1,20 @@
+@layer base {
+  html[dir='rtl'] body {
+    text-align: right;
+  }
+
+  html[dir='rtl'] input,
+  html[dir='rtl'] textarea,
+  html[dir='rtl'] select {
+    text-align: right;
+  }
+
+  html[dir='rtl'] table th,
+  html[dir='rtl'] table td {
+    text-align: right;
+  }
+
+  html[dir='rtl'] .recharts-default-legend {
+    direction: rtl;
+  }
+}

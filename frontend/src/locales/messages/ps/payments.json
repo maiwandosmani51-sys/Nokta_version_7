@@ -1,0 +1,8 @@
+{
+  "method": "Method",
+  "method_cash": "Cash",
+  "method_bank": "Bank Transfer",
+  "method_mobile": "Mobile Money",
+  "method_card": "Card",
+  "reference": "Reference Number"
+}

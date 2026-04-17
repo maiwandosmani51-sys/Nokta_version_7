@@ -10,7 +10,9 @@
     "seed": "ts-node src/scripts/seed.ts",
     "delete-students-teachers": "ts-node src/scripts/delete_students_teachers.ts",
     "clear-database": "ts-node src/scripts/clear_database.ts",
-    "create-super-admin": "ts-node src/scripts/create_super_admin.ts"
+    "create-super-admin": "ts-node src/scripts/create_super_admin.ts",
+    "repair-data-integrity": "ts-node src/scripts/repair_data_integrity.ts",
+    "validate-api": "ts-node src/scripts/validate_api_integrity.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -23,7 +25,8 @@
     "joi": "^17.9.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.8.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "multer": "^2.1.1"
   },
   "devDependencies": {
     "@faker-js/faker": "^10.4.0",
@@ -34,6 +37,7 @@
     "@types/express-rate-limit": "^6.0.0",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/morgan": "^1.9.4",
+    "@types/multer": "^1.4.13",
     "@types/node": "^20.16.0",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",

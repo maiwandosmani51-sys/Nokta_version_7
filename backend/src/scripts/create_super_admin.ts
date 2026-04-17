@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
-import { connectDatabase } from '../database';
+import { connectDatabase } from '../database/connect';
 import { User } from '../models/User';
 
 async function createSuperAdmin() {

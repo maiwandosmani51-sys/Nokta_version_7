@@ -69,6 +69,8 @@ Nokta Academy Management System
 - **Offline navigation** - Cached routes work without internet
 - **Auto-update** - Service worker updates automatically
 - **Cache-first strategy** - Fast loading from cache when available
+- **Local profile asset support** - backend seed script generates local profile images for teachers and students
+- **Uploads runtime caching** - service worker caches `/uploads/*` image assets for offline profile display
 
 ### Performance Optimization
 - **Lazy loading** - Route-based and component-based code splitting
@@ -95,6 +97,15 @@ Nokta Academy Management System
 - ✅ Basic middleware setup (CORS, compression, security)
 - ✅ Error handling and logging
 - ✅ Environment configuration
+- ✅ Student creation flow fixed end-to-end with request validation, rollNo generation, and multipart handling
+- ✅ Critical production bug fixed: duplicate `rollNo: null` issue resolved by always generating server-side `rollNo` and using a unique sparse index
+- ✅ Database index recovery note added: drop old `rollNo_1` index and restart MongoDB to rebuild correctly
+- ✅ Teacher creation fixed: profile image upload now works correctly with FormData handling
+- ✅ Frontend API service fixed: removed default Content-Type header for FormData requests
+- ✅ UI bugs fixed: profile images now display correctly in cards for students and teachers with normalized URL construction and fallback handling, teacher name field mapping corrected, subject population working, CORS updated for multiple ports
+- ✅ Syntax error in `frontend/src/modules/CrudPage.tsx` fixed by closing the student card render function correctly and normalizing image path access
+- ✅ Comprehensive logging added to teacher creation and data fetching for debugging
+- ✅ Backend teacher module enhanced with name field splitting, salary mapping, and Joi schema updates
 
 ### Authentication Module
 - ✅ JWT token generation and validation
@@ -117,6 +128,8 @@ Nokta Academy Management System
 - ✅ Create, read, update, delete operations
 - ✅ Modal-based editing interface
 - ✅ Auto-generated forms without ID fields
+- ✅ Roll number auto-generation for students to avoid duplicate `rollNo` key errors
+- ✅ Card-based UI added for students, classes, subjects, and teachers with responsive grid layout
 
 ### Reusable UI Components
 - ✅ Button component with variants and states
@@ -222,6 +235,32 @@ Nokta Academy Management System
 - ✅ Family students can view family members' data
 - ✅ Teachers can view assigned students' data
 - ✅ Added type assertions `(as any)` for lean query objects
+
+### UI and CRUD Fixes
+- ✅ Fixed horizontal overflow by applying `overflow-x-hidden` to `body`
+- ✅ Added `overflow-x-hidden` to main layout wrapper in `frontend/src/components/layout/AppShell.tsx`
+- ✅ Ensured tables are wrapped in `overflow-x-auto` containers and tables use `min-w-full w-full table-auto`
+- ✅ Added responsive break-control to table cells with `break-words`
+- ✅ Corrected student list field mapping from `subjectId` to `subjectName`
+- ✅ Enabled student edit support in generic CRUD engine
+- ✅ Added `PUT /api/students/:id` endpoint in `backend/src/modules/students.ts`
+- ✅ Implemented `updateStudent` in `backend/src/services/studentService.ts`
+- ✅ Restricted `/students` CRUD to only `super_admin` and `admin` roles
+- ✅ Updated student module permissions and enabled edit buttons in `frontend/src/config/modules.ts`
+
+### Add Student Fixes
+- ✅ Fixed `POST /api/students` to require `classId`, `subjectId`, and `teacherId`
+- ✅ Ensured student creation uses correct ObjectId references rather than name values
+- ✅ Added `GET /api/students` with `.populate('classId').populate('subjectId').populate('teacherId')`
+- ✅ Normalized returned student records with `className`, `subjectName`, and `teacherName`
+- ✅ Updated frontend student form configuration to send `firstName`, `lastName`, `fatherName`, `familyPhone`, `classId`, `subjectId`, `teacherId`, `feeAmount`, `paidAmount`
+
+### Add Student Fixes
+- ✅ Fixed `POST /api/students` to require `classId`, `subjectId`, and `teacherId`
+- ✅ Ensured student creation uses correct ObjectId references rather than name values
+- ✅ Added `GET /api/students` with `.populate('classId').populate('subjectId').populate('teacherId')`
+- ✅ Normalized returned student records with `className`, `subjectName`, and `teacherName`
+- ✅ Updated frontend student form configuration to send `firstName`, `lastName`, `fatherName`, `familyPhone`, `classId`, `subjectId`, `teacherId`, `feeAmount`, `paidAmount`
 
 ### Auto Family Account Creation
 - ✅ Enhanced `students.ts` controller with automatic family account creation
@@ -336,6 +375,12 @@ Nokta Academy Management System
 - ✅ Executed `seed.ts` to populate database with users, classes, subjects, exams, results
 - ✅ Super admin created with email: maihan@gmail.com, password: 12345678
 - ✅ All roles populated with test accounts
+- ✅ 30 teachers with random salary types (fixed/percentage)
+- ✅ 300 students with auto-generated roll numbers (STD-1 to STD-300)
+- ✅ 10 classes with 3-5 subjects each
+- ✅ Teacher-subject-class assignments
+- ✅ Family accounts auto-created for students
+- ✅ Local profile images generated for all users
 
 ## 4. API ROUTES TO FILES MAPPING
 

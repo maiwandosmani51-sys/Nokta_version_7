@@ -1,0 +1,16 @@
+@layer base {
+  html[dir='ltr'] body {
+    text-align: left;
+  }
+
+  html[dir='ltr'] input,
+  html[dir='ltr'] textarea,
+  html[dir='ltr'] select {
+    text-align: left;
+  }
+
+  html[dir='ltr'] table th,
+  html[dir='ltr'] table td {
+    text-align: left;
+  }
+}

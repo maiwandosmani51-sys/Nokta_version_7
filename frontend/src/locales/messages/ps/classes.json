@@ -1,0 +1,14 @@
+{
+  "class_name": "د ټولګي نوم",
+  "subjects": "مضامین",
+  "assigned_teachers": "ټاکل شوي ښوونکي",
+  "capacity": "ظرفیت",
+  "class_code": "د ټولګي کوډ",
+  "assigned_teacher_count": "د ښوونکو شمېر",
+  "assigned_subject_count": "د مضامینو شمېر",
+  "add_subject": "مضمون اضافه کړئ",
+  "choose_teacher": "ښوونکی وټاکئ",
+  "subject_names": "د مضمون نومونه دننه کړئ",
+  "gender_restriction": "د جنسیت محدودیت",
+  "gender_coed": "مختلط"
+}

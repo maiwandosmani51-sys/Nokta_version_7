@@ -1,5 +1,5 @@
 import type { HTMLAttributes, ReactNode } from 'react';
-import { designSystem } from '../../designSystem';
+import { designSystem } from '@/constants/designSystem';
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;

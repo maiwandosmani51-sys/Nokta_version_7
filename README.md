@@ -103,3 +103,9 @@ npm run dev  # Start development server on port 5173
 ## Sample Accounts
 
 See `account/accounts.md` for login credentials for all user types.
+Quick login for the current project:
+- Super Admin: `admin@gmail.com` / `12345678`
+- Admin: `admin1@nokta.com` / `Admin123!`
+- Teacher: `teacher1@nokta.com` / `Teacher123!`
+- Student: `student1@nokta.com` / `Student123!`
+- Parent/Family: `family1@nokta.com` / `Family123!`

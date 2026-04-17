@@ -1,0 +1,9 @@
+{
+  "title": "عنوان",
+  "code": "کد",
+  "class": "کلاس",
+  "fee_amount": "شهریه",
+  "teacher": "معلم",
+  "description": "توضیحات",
+  "class_name": "نام کلاس"
+}

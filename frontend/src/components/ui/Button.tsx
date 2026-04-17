@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes } from 'react';
-import { designSystem } from '../../designSystem';
+import { designSystem } from '@/constants/designSystem';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'danger' | 'outline' | 'ghost' | 'default' | 'solid' | 'destructive';
@@ -26,7 +26,7 @@ export function Button({ children, className = '', variant = 'primary', size = '
   return (
     <button
       {...props}
-      className={`inline-flex items-center justify-center ${designSystem.borderRadius} ${designSystem.transitions} font-medium disabled:opacity-50 disabled:pointer-events-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`inline-flex items-center justify-center ${designSystem.borderRadius} ${designSystem.transitions} font-medium disabled:pointer-events-none disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-white/30 ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {children}
     </button>

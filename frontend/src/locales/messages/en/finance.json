@@ -1,0 +1,10 @@
+{
+  "title": "Title",
+  "amount": "Amount",
+  "category": "Category",
+  "date": "Date",
+  "notes": "Notes",
+  "income": "Income",
+  "expenses": "Expenses",
+  "total_expenses": "Total Expenses"
+}

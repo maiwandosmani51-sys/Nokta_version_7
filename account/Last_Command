@@ -1,0 +1,278 @@
+You are an elite senior full-stack engineer and system debugger.
+
+Your mission is to COMPLETELY repair, stabilize, and enhance the "Nokta Academy Management System" from 0 to 100 with production-grade quality.
+
+You MUST follow ALL steps strictly and sequentially.
+
+DO NOT SKIP ANY STEP.
+
+==================================================
+🔍 PHASE 0: PROJECT UNDERSTANDING (MANDATORY)
+==================================================
+
+1. Read entire project structure.
+2. Identify stack:
+   - Backend: Node.js, Express, MongoDB (Mongoose)
+   - Frontend: React (possibly Vite), TailwindCSS
+
+3. Build a SYSTEM MAP:
+   - Modules:
+     Users / Auth
+     Students
+     Teachers
+     Admins
+     Announcements
+     Classes/Courses
+
+4. Create a RELATION MAP:
+   - Who depends on what
+   - API endpoints used by frontend
+
+5. Detect:
+   - Missing models (e.g. Owner not registered)
+   - Broken imports
+   - Circular dependencies
+
+==================================================
+🧠 PHASE 1: BACKEND HARD FIX (DEEP DEBUG)
+==================================================
+
+1. Fix Mongoose Issues:
+   - Ensure ALL models are registered BEFORE usage
+   - Fix error:
+     "Schema hasn't been registered for model 'Owner'"
+
+   ACTION:
+   - Import all models in a central loader OR ensure correct require order
+
+2. Standardize Models:
+   - Add required fields
+   - Fix inconsistent validation
+
+3. Fix Controllers:
+   For EACH entity:
+   - Validate request body
+   - Handle errors properly
+   - Return consistent JSON response:
+     {
+       success: true/false,
+       message: string,
+       data: object
+     }
+
+4. Fix Routes:
+   - Ensure all CRUD endpoints exist:
+     POST / GET / PUT / DELETE
+   - Fix wrong route paths
+   - Fix middleware issues
+
+5. Add Logging:
+   - Log errors
+   - Log failed DB operations
+
+==================================================
+⚙️ PHASE 2: FRONTEND API INTEGRATION FIX
+==================================================
+
+1. Scan ALL API calls:
+   - axios / fetch
+
+2. Fix:
+   - Wrong endpoints
+   - Wrong payload structure
+   - Missing headers (Content-Type, Authorization)
+
+3. Ensure:
+   - Proper error handling (try/catch)
+   - Loading states
+   - Empty states
+
+==================================================
+🔁 PHASE 3: COMPLETE CRUD REPAIR (SYSTEM-WIDE)
+==================================================
+
+FOR EACH MODULE:
+
+-----------------------------------
+A. CREATE
+-----------------------------------
+- Form inputs must match backend schema
+- Validate before submit
+- Show success/error message
+
+-----------------------------------
+B. READ
+-----------------------------------
+- Data must load correctly
+- Handle "no data" case
+
+-----------------------------------
+C. UPDATE
+-----------------------------------
+- Prefill form with existing data
+- FIX: missing fields in edit forms
+- Ensure correct ID is sent
+
+-----------------------------------
+D. DELETE
+-----------------------------------
+- Add confirmation dialog
+- Remove item from UI after delete
+
+==================================================
+🔎 PHASE 4: SEARCH + SORT (ALL LISTS)
+==================================================
+
+1. Add SEARCH:
+   - Real-time filtering
+   - Debounce (300ms)
+
+2. Add SORT:
+   - Toggle ASC/DESC
+   - Sort by:
+     name
+     date
+     role
+
+3. Must work with:
+   - Tables
+   - Cards
+
+==================================================
+🧾 PHASE 5: REGISTRATION PAGE (CRITICAL FIX)
+==================================================
+
+1. REMOVE:
+   - username field completely
+
+2. KEEP ONLY:
+   - name
+   - email
+   - password
+
+3. FIX REGISTRATION BUG:
+   - Debug API call
+   - Fix validation mismatch
+
+4. UI FIX:
+   - Dropdown broken → fix Tailwind styles
+   - Ensure:
+     dark:bg-...
+     light:bg-...
+
+5. UX:
+   - Show inline errors
+   - Show success message
+   - Auto redirect after success
+
+==================================================
+📢 PHASE 6: ANNOUNCEMENTS SYSTEM (FULL FIX)
+==================================================
+
+1. Backend:
+   - Ensure Announcement schema exists
+   - Fix CRUD fully
+
+2. Fix BUG:
+   "Record not found"
+
+   ACTION:
+   - Check query
+   - Ensure correct ID
+   - Ensure data exists
+
+3. Frontend:
+   - Show announcements in:
+     a) Announcements page
+     b) Home page
+
+4. HOME PAGE FIX:
+   - Replace "Record not found"
+   - Show real data
+
+5. CARD DESIGN:
+   - Title
+   - Content
+   - Date
+
+6. ADD BUTTON:
+   "Register"
+
+   LOGIC:
+   - On click:
+     → Navigate to /register
+     → Pass selected class data
+     → Prefill form
+
+==================================================
+🧑‍🎓 PHASE 7: CARD UI (USERS)
+==================================================
+
+FOR:
+- Students
+- Teachers
+- Admins
+
+1. Avatar:
+   - rounded-full
+   - centered
+
+2. Layout:
+   - Image top center
+   - Info below
+
+3. Responsive grid
+
+==================================================
+🌙 PHASE 8: DARK/LIGHT MODE (GLOBAL FIX)
+==================================================
+
+1. Ensure ALL components support both modes
+
+2. Fix:
+   - Dropdown visibility
+   - Text contrast
+
+3. Add global toggle if missing
+
+==================================================
+🔐 PHASE 9: VALIDATION + SECURITY
+==================================================
+
+1. Password:
+   - Adjust rules (not too strict)
+
+2. Sanitize inputs
+
+3. Prevent crashes
+
+==================================================
+🧪 PHASE 10: FINAL TEST
+==================================================
+
+1. Test ALL flows manually
+
+2. Fix:
+   - Console errors
+   - API errors
+
+==================================================
+📊 FINAL OUTPUT
+==================================================
+
+You MUST provide:
+
+1. FULL UPDATED CODE
+2. LIST OF FIXES
+3. ROOT CAUSE ANALYSIS
+4. IMPROVEMENT SUGGESTIONS
+
+==================================================
+STRICT RULES:
+==================================================
+
+- DO NOT skip steps
+- DO NOT assume anything
+- ALWAYS verify
+- WRITE CLEAN CODE
+- DO NOT BREAK WORKING FEATURES

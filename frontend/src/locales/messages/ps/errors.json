@@ -1,0 +1,9 @@
+{
+  "access_denied": "لاسرسی منع دی",
+  "permission_view": "تاسو د {{entity}} د لیدو اجازه نه لرئ.",
+  "unable_load_records": "معلومات بار نه شول. مهرباني وکړئ اجازې یا سرور وګورئ.",
+  "no_records_found": "هیڅ ریکارډ ونه موندل شو.",
+  "unable_retrieve_profile": "پروفایل نشي ترلاسه کېدای.",
+  "login_error": "ننوتل ناکام شول. خپل معلومات وګورئ.",
+  "class_code_exists": "د ټولګي کوډ له مخکې موجود دی."
+}

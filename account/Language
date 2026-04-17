@@ -1,0 +1,171 @@
+Please perform a FULL MOBILE FRONTEND CLONE + RESPONSIVE CONVERSION of my existing project.
+
+IMPORTANT:
+This task must be done in ONE COMPLETE PROCESS.
+
+====================================================
+STEP 1 — FULL PROJECT CLONE
+====================================================
+
+Scan the existing frontend project completely and create a new folder:
+
+/frontend_mobile
+
+This new folder must be an EXACT CLONE of the current frontend project.
+
+Clone exactly:
+
+- folder structure
+- file names
+- modules
+- routes
+- components
+- pages
+- hooks
+- services
+- stores
+- theme
+- locales
+- RBAC logic
+- permission checks
+- dashboard sections
+- dark mode / light mode
+- translations
+- utility functions
+
+Required exact structure:
+
+frontend_mobile/
+└── src/
+    ├── components/
+    ├── pages/
+    ├── modules/
+    ├── routes/
+    ├── hooks/
+    ├── services/
+    ├── store/
+    ├── locales/
+    ├── theme/
+    └── utils/
+
+Use the SAME naming convention and SAME hierarchy as existing frontend.
+
+DO NOT redesign from scratch.
+
+====================================================
+STEP 2 — MOBILE RESPONSIVE TRANSFORMATION
+====================================================
+
+After cloning, convert all pages and components into a FULL MOBILE RESPONSIVE VERSION.
+
+This must preserve ALL existing functionality.
+
+Transform desktop UI into mobile UI as follows:
+
+1) LAYOUT
+- sidebar → drawer navigation
+- top navbar → mobile app bar
+- desktop grids → vertical stacked layout
+- wide containers → full width mobile containers
+
+2) TABLES TO MOBILE CARDS
+Convert ALL data tables into mobile-friendly card views.
+
+Example:
+desktop:
+- table rows
+- multiple columns
+
+mobile:
+- stacked cards
+- label/value pairs
+- expandable detail sections
+- action buttons at bottom
+
+Apply this to:
+- students
+- teachers
+- attendance
+- exams
+- results
+- branches
+- reports
+- users
+- permissions
+- finance
+
+3) FORMS TO MOBILE STEP FORMS
+Convert large forms into:
+- step-by-step forms
+- accordion sections
+- mobile friendly inputs
+- full width fields
+- proper spacing
+- bottom sticky submit button
+
+4) MODALS
+Convert desktop modals into:
+- bottom sheets
+- full screen mobile dialogs
+
+5) DASHBOARD
+Convert dashboard cards into:
+- vertical KPI cards
+- swipeable sections
+- responsive charts
+- touch friendly widgets
+
+6) BUTTONS
+Convert buttons to:
+- larger touch targets
+- 44px minimum height
+- icon + text layout
+
+7) NAVIGATION
+Add mobile navigation:
+
+- drawer menu for main sections
+- bottom tabs for frequent pages
+- stack navigation for detail pages
+
+8) MOBILE UX IMPROVEMENTS
+Add:
+- pull to refresh
+- lazy loading
+- infinite scroll
+- loading skeletons
+- empty state components
+- mobile notifications panel
+
+====================================================
+STEP 3 — KEEP EXISTING DESIGN SYSTEM
+====================================================
+
+Preserve the SAME design language:
+
+- colors
+- spacing
+- typography
+- cards
+- shadows
+- icons
+- form styles
+- dark mode
+- light mode
+
+The mobile version must visually match the web version.
+
+====================================================
+STEP 4 — FINAL SCAN
+====================================================
+
+After generation, scan all frontend_mobile files and ensure:
+
+- no broken imports
+- no route errors
+- no style conflicts
+- no missing components
+- no API path issues
+- all pages open correctly
+
+Generate a final architecture report.

@@ -1,0 +1,12 @@
+{
+  "title": "Title",
+  "message": "Message",
+  "recipient_roles": "Recipient Roles",
+  "recipients": "Recipients",
+  "image": "Image",
+  "publish_status": "Publish Status",
+  "status_draft": "Draft",
+  "status_published": "Published",
+  "latest_announcements": "Latest Announcements",
+  "home_description": "Stay updated with the newest school announcements, notices, and published updates."
+}

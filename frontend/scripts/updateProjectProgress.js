@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const outputFile = path.resolve(__dirname, '../src/PROJECT_PROGRESS.ts');
+const outputFile = path.resolve(__dirname, '../src/config/projectProgress.ts');
 const progress = {
   responsiveUI: true,
   sidebarCompleted: true,

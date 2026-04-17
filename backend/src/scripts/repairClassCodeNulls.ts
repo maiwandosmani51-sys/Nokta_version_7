@@ -1,4 +1,4 @@
-import { connectDatabase } from '../database';
+import { connectDatabase } from '../database/connect';
 import { ClassModel } from '../models/Class';
 
 async function generateNextClassCode() {

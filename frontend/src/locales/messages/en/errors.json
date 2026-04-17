@@ -1,0 +1,9 @@
+{
+  "access_denied": "Access denied",
+  "permission_view": "You do not have permission to view {{entity}}.",
+  "unable_load_records": "Unable to load records. Please check permissions or try again.",
+  "no_records_found": "No records found.",
+  "unable_retrieve_profile": "Unable to retrieve profile.",
+  "login_error": "Login failed. Check your credentials.",
+  "class_code_exists": "Class code already exists. Please try again."
+}

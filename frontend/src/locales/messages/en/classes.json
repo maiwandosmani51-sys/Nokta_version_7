@@ -1,0 +1,14 @@
+{
+  "class_name": "Class Name",
+  "subjects": "Subjects",
+  "assigned_teachers": "Assigned Teachers",
+  "capacity": "Capacity",
+  "class_code": "Code",
+  "assigned_teacher_count": "Teachers",
+  "assigned_subject_count": "Subjects",
+  "gender_restriction": "Gender Restriction",
+  "gender_coed": "Co-ed",
+  "add_subject": "Add Subject",
+  "choose_teacher": "Choose Teacher",
+  "subject_names": "Add subject names for this class"
+}

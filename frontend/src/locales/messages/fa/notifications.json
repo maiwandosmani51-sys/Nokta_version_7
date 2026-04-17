@@ -1,0 +1,12 @@
+{
+  "title": "عنوان",
+  "message": "پیام",
+  "recipient_roles": "نقش‌های گیرنده",
+  "recipients": "گیرندگان",
+  "image": "تصویر",
+  "publish_status": "وضعیت نشر",
+  "status_draft": "پیش‌نویس",
+  "status_published": "منتشر شده",
+  "latest_announcements": "آخرین اعلان‌ها",
+  "home_description": "تازه‌ترین اعلان‌ها، خبرتیاها و به‌روزرسانی‌های منتشرشده را ببینید."
+}

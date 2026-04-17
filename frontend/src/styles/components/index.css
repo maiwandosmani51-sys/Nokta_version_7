@@ -1,0 +1,57 @@
+@layer components {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--color-text-soft), var(--color-text-subtle));
+    border-radius: 9999px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, var(--color-text), var(--color-text-soft));
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-text-soft) transparent;
+  }
+
+  .glass-card {
+    @apply border backdrop-blur-xl;
+    background-color: var(--color-surface);
+    border-color: var(--color-border);
+    box-shadow: 0 20px 60px var(--shadow-card-color);
+  }
+
+  .glass-panel {
+    @apply border backdrop-blur-xl;
+    background-color: var(--color-surface);
+    border-color: var(--color-border);
+    box-shadow: 0 20px 60px var(--shadow-card-color);
+  }
+
+  .glass-button {
+    @apply rounded-[28px] border backdrop-blur-xl;
+    background-color: var(--color-surface-strong);
+    border-color: var(--color-border);
+    color: var(--color-text);
+  }
+
+  .glass-text {
+    color: var(--color-text);
+  }
+
+  .hover-glow:hover {
+    @apply scale-[1.01];
+    box-shadow: 0 25px 60px var(--shadow-hover-color);
+  }
+
+  .theme-toggle {
+    min-width: 2.75rem;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "actor": "Actor",
+  "action": "Action",
+  "target": "Target",
+  "created_at": "Date"
+}

@@ -1,5 +1,5 @@
 import { createApp } from './app';
-import { config } from './config';
+import { config } from './config/env';
 
 async function start() {
   const app = await createApp();

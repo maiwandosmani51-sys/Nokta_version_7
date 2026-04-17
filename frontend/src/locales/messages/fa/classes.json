@@ -1,0 +1,14 @@
+{
+  "class_name": "نام کلاس",
+  "subjects": "مضامین",
+  "assigned_teachers": "معلمان تعیین‌شده",
+  "capacity": "ظرفیت",
+  "class_code": "کد کلاس",
+  "assigned_teacher_count": "تعداد معلمان",
+  "assigned_subject_count": "تعداد مضامین",
+  "add_subject": "افزودن مضمون",
+  "choose_teacher": "انتخاب معلم",
+  "subject_names": "نام مضامین را وارد کنید",
+  "gender_restriction": "محدودیت جنسیت",
+  "gender_coed": "مختلط"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "عنوان",
+  "amount": "مبلغ",
+  "category": "دسته‌بندی",
+  "date": "تاریخ",
+  "notes": "یادداشت",
+  "income": "درآمد",
+  "expenses": "مصارف",
+  "total_expenses": "کل مصارف"
+}

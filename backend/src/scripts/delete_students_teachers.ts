@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { connectDatabase } from '../database';
+import { connectDatabase } from '../database/connect';
 import { User } from '../models/User';
 import { ClassModel as Class } from '../models/Class';
 import { Subject } from '../models/Subject';
