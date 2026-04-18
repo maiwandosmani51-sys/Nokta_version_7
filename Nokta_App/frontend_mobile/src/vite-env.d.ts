@@ -1,0 +1,1 @@
+// CLONED: See /frontend/src/vite-env.d.ts for original source.

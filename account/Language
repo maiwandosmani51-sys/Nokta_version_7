@@ -1,171 +1,141 @@
-Please perform a FULL MOBILE FRONTEND CLONE + RESPONSIVE CONVERSION of my existing project.
+You are a senior full-stack and mobile application engineer.
 
-IMPORTANT:
-This task must be done in ONE COMPLETE PROCESS.
+I have an existing **web-based project (frontend)** with a complete folder structure, design system, components, pages, styles, and modules.
 
-====================================================
-STEP 1 — FULL PROJECT CLONE
-====================================================
+Your task is to **create a full mobile version of this project** in a **separate folder**, while preserving the same:
 
-Scan the existing frontend project completely and create a new folder:
+* UI structure
+* Design system (colors, typography, spacing)
+* Component hierarchy
+* Business logic (where applicable)
+* Module organization
 
-/frontend_mobile
+---
 
-This new folder must be an EXACT CLONE of the current frontend project.
+### 🔧 REQUIREMENTS
 
-Clone exactly:
+1. **Project Setup**
 
-- folder structure
-- file names
-- modules
-- routes
-- components
-- pages
-- hooks
-- services
-- stores
-- theme
-- locales
-- RBAC logic
-- permission checks
-- dashboard sections
-- dark mode / light mode
-- translations
-- utility functions
+* Create a new folder: `/mobile-app`
+* Use **React Native (Expo preferred)** or **React Native CLI**
+* Setup a clean, scalable architecture
 
-Required exact structure:
+---
 
-frontend_mobile/
-└── src/
-    ├── components/
-    ├── pages/
-    ├── modules/
-    ├── routes/
-    ├── hooks/
-    ├── services/
-    ├── store/
-    ├── locales/
-    ├── theme/
-    └── utils/
+### 📁 Folder Structure (must mirror web structure)
 
-Use the SAME naming convention and SAME hierarchy as existing frontend.
+Replicate the same structure as the web project:
 
-DO NOT redesign from scratch.
+* `/components`
+* `/screens` (instead of pages)
+* `/modules`
+* `/services`
+* `/hooks`
+* `/store`
+* `/utils`
+* `/assets`
+* `/theme`
 
-====================================================
-STEP 2 — MOBILE RESPONSIVE TRANSFORMATION
-====================================================
+Keep naming consistent with the web version.
 
-After cloning, convert all pages and components into a FULL MOBILE RESPONSIVE VERSION.
+---
 
-This must preserve ALL existing functionality.
+### 🎨 UI / DESIGN SYSTEM
 
-Transform desktop UI into mobile UI as follows:
+* Extract all colors, fonts, spacing, and reuse them in `/theme`
+* Maintain exact color palette
+* Convert CSS/SCSS/Tailwind styles into React Native StyleSheet
+* Ensure consistent typography and spacing
 
-1) LAYOUT
-- sidebar → drawer navigation
-- top navbar → mobile app bar
-- desktop grids → vertical stacked layout
-- wide containers → full width mobile containers
+---
 
-2) TABLES TO MOBILE CARDS
-Convert ALL data tables into mobile-friendly card views.
+### 📱 MOBILE ADAPTATION RULES
 
-Example:
-desktop:
-- table rows
-- multiple columns
+* Convert all web pages into mobile screens
+* Replace:
 
-mobile:
-- stacked cards
-- label/value pairs
-- expandable detail sections
-- action buttons at bottom
+  * `div` → `View`
+  * `button` → `TouchableOpacity` / `Pressable`
+  * `input` → `TextInput`
+* Use `ScrollView` where necessary
+* Implement proper responsive layouts (flexbox)
 
-Apply this to:
-- students
-- teachers
-- attendance
-- exams
-- results
-- branches
-- reports
-- users
-- permissions
-- finance
+---
 
-3) FORMS TO MOBILE STEP FORMS
-Convert large forms into:
-- step-by-step forms
-- accordion sections
-- mobile friendly inputs
-- full width fields
-- proper spacing
-- bottom sticky submit button
+### 🔄 NAVIGATION
 
-4) MODALS
-Convert desktop modals into:
-- bottom sheets
-- full screen mobile dialogs
+* Use **React Navigation**
+* Convert:
 
-5) DASHBOARD
-Convert dashboard cards into:
-- vertical KPI cards
-- swipeable sections
-- responsive charts
-- touch friendly widgets
+  * Web routes → Stack / Tab navigation
+* Maintain same navigation flow as web
 
-6) BUTTONS
-Convert buttons to:
-- larger touch targets
-- 44px minimum height
-- icon + text layout
+---
 
-7) NAVIGATION
-Add mobile navigation:
+### 🧠 STATE MANAGEMENT
 
-- drawer menu for main sections
-- bottom tabs for frequent pages
-- stack navigation for detail pages
+* Reuse existing logic (Redux / Zustand / Context)
+* Adapt API calls for mobile environment
+* Ensure authentication flow works
 
-8) MOBILE UX IMPROVEMENTS
-Add:
-- pull to refresh
-- lazy loading
-- infinite scroll
-- loading skeletons
-- empty state components
-- mobile notifications panel
+---
 
-====================================================
-STEP 3 — KEEP EXISTING DESIGN SYSTEM
-====================================================
+### 🌙 DARK MODE SUPPORT
 
-Preserve the SAME design language:
+* Implement global dark/light mode toggle
+* Use theme provider
+* Sync with system preference if possible
 
-- colors
-- spacing
-- typography
-- cards
-- shadows
-- icons
-- form styles
-- dark mode
-- light mode
+---
 
-The mobile version must visually match the web version.
+### 🔐 FORMS & VALIDATION
 
-====================================================
-STEP 4 — FINAL SCAN
-====================================================
+* Convert all forms properly
+* Maintain validations
+* Ensure mobile-friendly input UX
 
-After generation, scan all frontend_mobile files and ensure:
+---
 
-- no broken imports
-- no route errors
-- no style conflicts
-- no missing components
-- no API path issues
-- all pages open correctly
+### 🌐 API INTEGRATION
 
-Generate a final architecture report.
+* Reuse existing API services
+* Ensure base URL config works on mobile
+* Handle errors properly
+
+---
+
+### ⚠️ IMPORTANT FIXES
+
+* Fix any UI that breaks on small screens
+* Optimize performance (avoid heavy re-renders)
+* Remove web-only dependencies
+
+---
+
+### 🧪 FINAL STEP
+
+After implementation:
+
+1. Scan the entire mobile project
+2. Detect:
+
+   * UI inconsistencies
+   * Broken navigation
+   * Unused components
+   * Performance issues
+3. Fix all issues
+4. Output a summary report of:
+
+   * What was created
+   * What was adapted
+   * What was fixed
+
+---
+
+### 🎯 GOAL
+
+Deliver a **production-ready mobile app** that looks and behaves like the web version but is fully optimized for mobile devices.
+
+Do NOT skip any module or screen.
+
+---

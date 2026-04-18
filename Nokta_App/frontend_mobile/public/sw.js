@@ -1,0 +1,1 @@
+// CLONED: See /frontend/public/sw.js for original source.
