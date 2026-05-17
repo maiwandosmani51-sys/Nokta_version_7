@@ -98,3 +98,4 @@ See `account/accounts.md` for local sample credentials. Common seeded accounts i
 - If the backend does not start, confirm MongoDB is running and `MONGO_URI` in `backend/.env` is correct.
 - If login fails after reseeding, clear browser local storage and try the seeded credentials again.
 - If the frontend cannot reach the API, confirm the backend is on port `8081` or set `VITE_API_URL`.
+# Nokta_V8
